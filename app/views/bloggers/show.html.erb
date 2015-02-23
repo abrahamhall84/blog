@@ -1,0 +1,10 @@
+<h1>Blogger's Info</h1>
+
+<p><%= @blogger.last_name %>, <%= @blogger.first_name %></p>
+<p><%= @blogger.age %></p>
+
+
+
+<%= link_to "Edit Info", edit_blogger_path(@blogger) %>
+<%= link_to "Blogger's Post", blogger_posts_path(@blogger) %>
+<%= link_to "Homepage", bloggers_path %>

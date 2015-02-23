@@ -1,0 +1,8 @@
+<h1><%= @blogger.first_name %><%= @blogger.last_name %>'s Posts</h1>
+
+<% @posts.each do |post| %>
+<p><%= link_to post.title, post_path(post) %></p>
+<% end %>
+
+<%= link_to "Add A New Post", new_blogger_post_path %>
+<%= link_to "Back to Other Bloggers", bloggers_path %>

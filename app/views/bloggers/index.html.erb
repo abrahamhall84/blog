@@ -1,0 +1,9 @@
+<h1>Enjoy These Bloggers</h1>
+
+<% @bloggers.each do |blogger| %>
+
+<ul>
+  <li>Blogger: <%= link_to blogger.last_name, blogger_path(blogger) %>, <%= blogger.first_name %></li>
+</ul>
+<% end %>
+<%= link_to "Add A Blogger", new_blogger_path %>
